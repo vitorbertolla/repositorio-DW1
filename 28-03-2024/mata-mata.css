@@ -1,0 +1,17 @@
+h1{text-align: center;
+    color: blue;}
+body{background-color: black;}
+p{color: white;
+    font-size: medium;}
+.linha1{display: flex;
+        margin-top: 110px;}
+.linha2{display: flex;}
+.linha2{margin-top: 60px;}
+.linha3{margin-top: 60px;}
+.linha3{display: flex;}
+.linha1-1{margin-left: 350px;}
+.linha1-2{margin-left: 700px;}
+.linha2-1{margin-left: 655px;}
+.linha2-2{margin-left: 40px;}
+.linha3-1{margin-left: 350px;}
+.linha3-2{margin-left: 700px;}
