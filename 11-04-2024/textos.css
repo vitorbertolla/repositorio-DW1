@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+.s{
+    font-family: Whisper;
+}
+
+body{background-color: khaki;}
+h1{
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    font-family: cursive;
+    font-size: 70px;
+ }
+.c{
+    font-size: large;
+    background-color: peru;
+    width: 200px;}
+.d{
+    background-color: peru ;
+    font-size: large
+    ;
+}
+div{display: flex;
+#se{margin-left: 10px;
+    background-color: peru;
+    width: 200px;
+    font-size: larger;
+}
+}
+p{font-size: medium;}
