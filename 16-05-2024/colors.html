@@ -23,7 +23,6 @@
             height: 500px;
         }
         .s , .s2, .s3{
-            display: flex;
             height: 50px;
         }
         h3{
@@ -32,9 +31,17 @@
             font-size: 60px;
             text-shadow: 3px 3px 2px rgba(128, 0, 0, 1)
         }
-        ul{
+        div{
             color: white;
             font-size: 35px;
+        }
+        p li:hover{
+            background-color: grey;
+            cursor: auto;
+        }
+        .f{
+            margin-left: 600px;
+            border: 2px, solid, white;
         }
     </style>
 </head>
@@ -46,11 +53,15 @@
         <img src="https://casadoboleiro.com.br/cdn/shop/products/Pasted-20230324-100243_clipped_rev_1_1024x1024@2x.png?v=1679663004" alt="">
     </div>
     <h3>siga nossas redes socias</h3>
-    <ul class="s">@corinthians</ul>
-    <img class="s" src=" https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="">
-    <img class="s2" src="https://png.pngtree.com/png-clipart/20230916/original/pngtree-twitter-logo-vector-png-image_12256691.png" alt="">
-    <ul class="s2">@corinthians</ul>
-    <img class="s3" src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt="">
-    <ul class="s3">@corinthians</ul>
+    <div class="f"><img class="s" src=" https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="">
+        <p class="s">@corinthians</p></div>
+    <div class="f">
+        <img class="s2" src="https://png.pngtree.com/png-clipart/20230916/original/pngtree-twitter-logo-vector-png-image_12256691.png" alt="">
+        <p class="s2">@corinthians</p>
+    </div>
+    <div class="f">
+        <img class="s3" src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt="">
+        <p class="s3">@corinthians</p>
+    </div>
 </body>
 </html>
