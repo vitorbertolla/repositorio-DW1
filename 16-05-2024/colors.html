@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
        /* para criar gradientes usa-se background linear gradiente, direção, cor1, cor2 */
        body{
             background: linear-gradient(to right, black, white);
@@ -20,10 +25,10 @@
             display: flex;
         }
         img{
-            height: 500px;
+            height: 72vh;
         }
         .s , .s2, .s3{
-            height: 50px;
+            height: 45px;
         }
         h3{
             color: rgb(15, 15, 15);
@@ -35,13 +40,18 @@
             color: white;
             font-size: 35px;
         }
-        p li:hover{
-            background-color: grey;
-            cursor: auto;
-        }
         .f{
-            margin-left: 600px;
-            border: 2px, solid, white;
+            margin-left: 40vw;
+            border: 2px solid white;
+            width: 300px;
+        }
+        #c{
+            margin-left: 20px;
+            padding-bottom: 10px;
+            padding-bottom: 10px;
+        }
+        #a{
+            margin-left: 5px;
         }
     </style>
 </head>
@@ -53,15 +63,15 @@
         <img src="https://casadoboleiro.com.br/cdn/shop/products/Pasted-20230324-100243_clipped_rev_1_1024x1024@2x.png?v=1679663004" alt="">
     </div>
     <h3>siga nossas redes socias</h3>
-    <div class="f"><img class="s" src=" https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="">
-        <p class="s">@corinthians</p></div>
+    <div class="f"><img class="s" id="c" src=" https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="">
+        <p class="s" id="a">@corinthians</p></div>
     <div class="f">
-        <img class="s2" src="https://png.pngtree.com/png-clipart/20230916/original/pngtree-twitter-logo-vector-png-image_12256691.png" alt="">
-        <p class="s2">@corinthians</p>
+        <img class="s2" id="c" src="https://png.pngtree.com/png-clipart/20230916/original/pngtree-twitter-logo-vector-png-image_12256691.png" alt="">
+        <p class="s2" id="a">@corinthians</p>
     </div>
     <div class="f">
-        <img class="s3" src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt="">
-        <p class="s3">@corinthians</p>
+        <img class="s3" id="c" src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt="">
+        <p class="s3" id="a">@corinthians</p>
     </div>
 </body>
 </html>

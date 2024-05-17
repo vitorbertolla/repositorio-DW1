@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        /* div{
+            border: 1px solid red;px
+        }
+        span{
+            border: 1px solid blue;
+        } */
+        div.container{
+            background-color: rgb(244, 230, 230);
+            width: 100vw;
+            height: 100vh;
+
+        }
+        div#cabecalho{
+            background-color: rgb(93, 59, 59);
+            width: 100vw;
+            height: 100vh;
+
+        }
+        div#secao1{
+            background-color: rgb(228, 189, 189);
+            width: 100vw;
+            height: 100vh;
+
+        }
+        div#secao2{
+            background-color: rgb(185, 83, 83);
+            width: 100vw;
+            height: 100vh;
+            
+        }
+        ul.menu{
+            background-color: rgb(16, 5, 86);
+        }
+        ul.menu li{
+            width: 120px;
+            background-color: black;
+            padding: 10px;
+            transition: 0.3s;
+            color: white;
+            border: 1px solid rgb(2, 70, 159);
+            border-radius: 20px;
+            list-style-type: none;
+            display: inline-block;
+        }
+        ul.menu li:hover{
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+        .menu a{
+            color: rgb(93, 91, 91);
+        }
+    </style>
+</head>
+<body>
+<!-- div sempre ocupa uma linha inteira, as caracteristicas vao ser aplicadas a toda a linha e cada div ocupa uma linha -->
+<!-- :os div podem ser posicionados um ao laddo do outro sem ocorrer  a quebra de linha, e as caracteristicas sao aplicadas a somente ao espaço do conteudo     -->
+<!--  unnidade de medida px view height o valor vai ser a % da altura que vai receber tal caracteristica, ex 100vh vai ser a tela inteira, vw a mesma coisa com largura -->
+<!-- <div>div 1</div>
+<div>div 2</div>
+<span> span 1 </span>
+<span> span 2 </span> -->
+
+<div class="container">
+    <ul class="menu">
+        <li><a href="#cabecalho">cabeçalho</a></li>
+        <li><a href="#secao1">seção 1</a></li>
+        <li><a href="#secao2">seção 2</a></li>
+    </ul>
+    <div id="cabecalho">
+        <h3>cabeçalho</h3></div>
+
+    <div id="secao1">
+        <h3>seção 1</h3></div>
+
+    <div id="secao2">
+        <h3>seção 2</h3></div>
+</div>
+        
+</body>
+</html>
