@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Poetsen+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Danfo&family=PT+Sans+Narrow:wght@400;700&family=Poetsen+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    /*  decclara variaveis para todo o codigo */
+        :root{
+            --cor-fundo:black;
+            /* para criar variaveis usa -- depois o nome, se for composto separa por -  depois : e a caracteristiaca que voce quer */
+            --cor-primaria: white;
+            --cor-secundaria: rgb(94, 94, 94);
+            --fonte-destaque: 30px "Roboto Mono", monospace;
+            --fonte-principal:15px "PT Sans Narrow", sans-serif;
+            /* variavel para fonte importada, primeiro importa depois coloca as caracterissticas na variavel */
+            /*  nessa variavel de fonte voce pode definir o tamanho da fonte antes da familia, mas ai quando for usar usa a tag font não fontfamily */
+        }
+        /* para tirar as margins e paddings que ja vem no navegador, depois disso voce que vai definir tudo */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* para usar uma variavel no lugar do atributo vai usar a tag var e dentro dela colocar a variavel que voce quer */
+        body{
+            background-color: var(--cor-fundo);
+            font: var(--fonte-principal);
+        }
+        .conteiner{
+            border: 1px solid var(--cor-primaria);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            background-color: var(--cor-secundaria);
+    
+        }
+        /* aqui pega todos os h1 descendentes do conteiner */
+        .conteiner h1{
+            margin-bottom: 10px;
+            color: var(--cor-primaria);
+            font: var(--fonte-destaque);
+
+        }
+         /* aqui pega todos os ul descendentes do conteiner */
+        .conteiner ul{
+            margin-left: 15px;
+            color: var(--cor-primaria);
+        }
+        .cabecalho{
+            background-color: var(--cor-secundaria);
+            height: 100px;
+            overflow: scroll;
+            /* overflow é uma propriedade que define o que vai acontecer quando o conteudo passaer os limites definidos como a aultura nessa div */
+            font: var(--fonte-destaque);
+        }
+    </style>
+</head>
+<body>
+    <div class="cabecalho">
+        <p>cabeçalho</p>
+        <p>cabeçalho</p>
+        <p>cabeçalho</p>
+        <p>cabeçalho</p>
+        <p>cabeçalho</p>
+
+    </div>
+    <div class="conteiner">
+        <h1 id="h1">Lista de Tarefas</h1>
+        
+        <ul>
+            <li> Tarefa 1</li>
+            <li> Tarefa 2</li>
+            <li> Tarefa 3</li>
+        </ul>
+
+
+
+
+    </div>
+    
+</body>
+</html>
