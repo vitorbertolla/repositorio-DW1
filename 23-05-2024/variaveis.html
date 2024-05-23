@@ -12,10 +12,11 @@
         :root{
             --cor-fundo:black;
             /* para criar variaveis usa -- depois o nome, se for composto separa por -  depois : e a caracteristiaca que voce quer */
-            --cor-primaria: white;
+            --cor-primaria: rgb(236, 144, 33);
             --cor-secundaria: rgb(94, 94, 94);
             --fonte-destaque: 30px "Roboto Mono", monospace;
             --fonte-principal:15px "PT Sans Narrow", sans-serif;
+            --altura-cabacalho: 100px;
             /* variavel para fonte importada, primeiro importa depois coloca as caracterissticas na variavel */
             /*  nessa variavel de fonte voce pode definir o tamanho da fonte antes da familia, mas ai quando for usar usa a tag font não fontfamily */
         }
@@ -36,6 +37,7 @@
             padding: 10px;
             margin: 10px;
             background-color: var(--cor-secundaria);
+            height: calc(100vh - var(--altura-cabacalho));
     
         }
         /* aqui pega todos os h1 descendentes do conteiner */
@@ -51,21 +53,32 @@
             color: var(--cor-primaria);
         }
         .cabecalho{
+            color: var(--cor-primaria);
             background-color: var(--cor-secundaria);
             height: 100px;
-            overflow: scroll;
+            overflow-y: scroll;
             /* overflow é uma propriedade que define o que vai acontecer quando o conteudo passaer os limites definidos como a aultura nessa div */
             font: var(--fonte-destaque);
+            border: 1px solid var(--cor-primaria);
+        }
+        #s{
+            text-align: center;
+            font-size: 35px;
+            background: linear-gradient(to left, yellow, orange, gold, rgb(203, 58, 6));
+            background-clip: text;
+            display: inline;
+            color: transparent;
+            animation: animated 5s linear infinite;
+        }
+        @keyframes animated{
+        to{ background-position-x: 161px;}
         }
     </style>
 </head>
 <body>
     <div class="cabecalho">
-        <p>cabeçalho</p>
-        <p>cabeçalho</p>
-        <p>cabeçalho</p>
-        <p>cabeçalho</p>
-        <p>cabeçalho</p>
+        <h1 id="s">Cabeçalho</h1>
+
 
     </div>
     <div class="conteiner">
