@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .conteiner{
+            background-color: gray;
+            width: 100vw;
+            height: 100vh;
+        }
+        .menu{
+            background-color: black;
+            height: 80px;
+        }
+        .menu ul{
+            display: flex;
+            justify-content: center;
+            /*  coloca o conteudo no centro */
+        }
+        .menu li{
+            list-style-type: none;
+        }
+        .menu a{
+            border: 1px solid black;
+            padding: 25px 15px;
+            display: inline-block;
+            height: 80px;
+            text-decoration: none;
+            /* text decoration tira o aspecto de link quando usa a tag a */
+            color: white;
+            transition: 0.3s;
+            /*  quando clica no a vai ter uma transição de 0.3 segundos para ficar mais suave */
+        }
+        .menu a:hover{
+            background-color: white;
+            color: black;
+        }
+        /*  essa parte faz com que a cor de fundo e a cor da letra mude quando o mouse tiver em cima */
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="menu">
+            <ul>
+                <li><a href="">Opção 1</a></li>
+                <li><a href="">Opção 2</a></li>
+                <li><a href="">Opção 3</a></li>
+            </ul>
+
+
+        </div>
+
+        <div class="principal">
+
+
+
+        </div>
+
+
+    </div>
+
+    
+</body>
+</html>
