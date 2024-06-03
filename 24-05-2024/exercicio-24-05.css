@@ -1,16 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=PT+Sans+Narrow:wght@400;700&family=Poetsen+One&family=REM:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --fonte-destaque: "REM", sans-serif;
+    --black: black;
+    --gradiente-onde: linear-gradient(black, rgb(1, 67, 1), rgb(100, 177, 6));
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+h1,h2,h3, li{
+    font-family: var(--fonte-destaque);
+    text-transform: uppercase;
+}
+#logo img{
+    height: 70px;
+    margin-right: 90px;
+    justify-content:left;
+} 
 .conteiner{
     background-color: #4A4E69;
     width: 100vw;
 }
 #menu{
-    background-color: #F2E9E4;
+    background-color: var(--black);
     height: 80px;
+    border: 2px solid green;
 }
 #menu ul{
     display: flex;
@@ -20,9 +36,8 @@
     list-style-type: none;
 }
 #menu a{
-    border: 2px solid black;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 251, 251);
     padding: 15px 15px;
     display: inline-block;
     /*  para deixar no meio */
@@ -32,36 +47,48 @@
 
 }
 #menu a:hover{
-    background-color: #22223B;
-    color: black;
+    color: rgb(14, 139, 64);
 }
 h1{
     text-align: center;
 }
-#home{
-    height: calc(100vh - 80px);
-    background-color: ;
+#MTB{
+    height: 100vh;
+    background-image: url(https://oggibikes.com.br/wp-content/uploads/2024/02/010_oggi_digital_banner_home_site_janeiro.jpg);
 }
-#secao1{
+#MTB h2{
+    display: inline;
+    margin-left: 365px;
+    color: blsck;
+    font-weight: bold;
+    background-color: #b4ecba;
+}
+#MTB #nome1{
+    margin-left: 120px;
+}
+#MTB #nome3{
+    margin-left: 330px;
+}
+#SPEED{
     background-color: #9A8C98;
 }
-#secao2{
-    background-color: #C9ADA7;
+#onde{
+    background: var(--gradiente-onde);
 }
-#secao3{
+#sobre{
     background-color: #9A8C98;
 }
-#contatos{
+#suporte{
     display: inline-block;
     background-color: white;
     height: 80px;
 }
-#contatos ul{
+#suporte ul{
     display: flex;
 }
-#contatos li{
+#suporte li{
     list-style-type: nome;
 }
-#home, #secao1, #secao2, #secao3{
+#MTB, #SPEED, #onde, #sobre{
     height: 100vh;
 }
