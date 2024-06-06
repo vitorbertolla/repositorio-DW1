@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .conteiner{
+            width: 100vw;
+            height: 100vh;
+            font-size: 40px;
+            background-color: grey;
+            display: flex;
+            flex-direction: row-reverse;
+            /*  muda os eixos principais e secundarios */
+            /*  muda a direção da distribuição dos elementos */
+            /*  muda a direção padrao, que é de linha da direita pra esquerda */
+            /*  o reverse vai fazer da esquerda pta direita */
+            /*  o column muda para de cima pra baixo */
+            /*  o display sempre vai tentar adaptar os elementos para ficarem no mesmo eixo, não respeita a largura */
+            /*  display flex habilita a edição dos filhos */
+            justify-content: center;
+            /*  justify edita os elementos no eixo principal*/
+            /*  center deixa no centro */
+            /*  space betwein separa os elementos de forma proporcional */
+            /*  space around deixa os elementos separados mas da um espaço da margem tambem  */
+            align-items: flex-start;
+            /*  aling edita os elementos no eixo secundario */
+            /*  quando so tem uma linha */
+            align-content: space-between;
+            /*  quando tem mais de uma linha */
+            flex-wrap: wrap;
+            /*  esse deixa o flex quebrar as linhas, não vai tentar acomodar todos os elementos na mesma linha */
+        }
+        .box{
+            width: 6.25rem;;
+            height: 6.25rem;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bg-vermelho{
+            background-color: red;
+        }
+        .bg-verde{
+            background-color: green;
+        }
+        .bg-azul{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="box bg-azul">1</div>
+        <div class="box bg-vermelho">2</div>
+        <div class="box bg-verde">3</div>
+
+
+    </div>
+</body>
+</html>

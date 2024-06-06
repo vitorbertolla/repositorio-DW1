@@ -2,7 +2,7 @@
 :root{
     --fonte-destaque: "REM", sans-serif;
     --black: black;
-    --gradiente-onde: linear-gradient(black, rgb(1, 67, 1), rgb(100, 177, 6));
+    --gradiente-onde: linear-gradient(rgb(34, 37, 33), rgb(1, 67, 1), rgb(100, 177, 6), rgba(168, 160, 13, 0.538));
 }
 *{
     margin: 0;
@@ -59,7 +59,7 @@ h1{
 #MTB h2{
     display: inline;
     margin-left: 365px;
-    color: blsck;
+    color: black;
     font-weight: bold;
     background-color: #b4ecba;
 }
@@ -69,8 +69,19 @@ h1{
 #MTB #nome3{
     margin-left: 330px;
 }
-#SPEED{
-    background-color: #9A8C98;
+#SPEED {
+    background-image: url(https://www.mxbikes.com.br/blog/img/imagens_colunas/foto_2655.jpg);
+    /* height: 100vh;
+    width: 100vw; */
+}
+#SPEED h1{
+    color: black;
+    font-weight: bold;
+    background-color: #b4ecba;
+    display: inline;
+    margin-top: 50px;
+    margin-left: 600px;
+
 }
 #onde{
     background: var(--gradiente-onde);
