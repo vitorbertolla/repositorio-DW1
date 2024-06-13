@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .conteiner{
+            height: 100vh;
+            display: flex;
+            gap: 10px;
+            /* espaço entre os elementos nos dois eixos*/
+            /*  column gap so para coluna */
+            /* row gap espaçamento entre linhas */
+            display: flex;
+            align-items: center;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        .box1{
+            background-color: green;
+            order: 3;
+            /* muda a ordem e assim muda a prioridade  de aparencia no site */
+            /* por padrao a ordem de todos sao 1, quanto menor a ordem maior a prioridade */
+            /* mesma ordem vai por quem apareceu primeiro no html */
+            flex-grow: 1;
+            /* faz o elemento ocupar todo o espaço em branco, o numero diz a respeito do numero de partes  que ele vai ocupar caso tenha que dividir com mais elementos  */
+           flex-shrink: 1;
+           /* comportamento do elemento quando precisa reduzir seu tamanho, se tiver 2 e os outros 1 por exemplo ele vai diminuir mais, quanto maior o numero mais ele vai diminuir */
+           
+           }
+           .box2{
+               background-color: blue;
+               order: 2;
+               flex-grow: 1;
+               flex-shrink: 1;
+               align-self: flex-start;
+               /* diz a respeito do alinhamento só dele, não vai respeitar o do div pai */
+               }
+           .box3{
+               background-color: red;
+               flex-grow: 1;
+               flex-shrink: 1;
+                }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+</body>
+</html>
