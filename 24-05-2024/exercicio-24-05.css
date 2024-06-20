@@ -26,9 +26,9 @@ h1,h2,h3, li{
 }
 
 #logo img{
-    top: 0px;
-    height: 60px;
-    margin-right: 90px;
+    top: 0rem;
+    height: 3.75rem;
+    margin-right: 5.625rem;
     justify-content:left;
     transition: 1s;
 } 
@@ -37,8 +37,8 @@ h1,h2,h3, li{
 }
 #menu{
     background-color: var(--black);
-    height: 80px;
-    border: 2px solid var(--green);
+    height: 5rem;
+    border: .125rem solid var(--green);
     position: fixed;
     width: 100vw;
 }
@@ -52,16 +52,16 @@ h1,h2,h3, li{
 #menu a{
     text-decoration: none;
     color: var(--white);
-    padding: 15px 15px;
+    padding: .9375rem .9375rem;
     display: inline-block;
     /*  para deixar no meio */
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: .625rem;
+    margin-top: .625rem;
     transition: 0.6s;
 
 }
 #logo a{
-    padding: 0px;
+    padding: 0rem;
 }
 #menu a:hover{
     color: var(--green);
@@ -75,16 +75,16 @@ h1{
 }
 #MTB h2{
     display: inline;
-    margin-left: 365px;
+    margin-left: 22.8125rem;
     color: var(--black);
     font-weight: bold;
     background-color: var(--background1);
 }
 #MTB #nome1{
-    margin-left: 120px;
+    margin-left: 7.5rem;
 }
 #MTB #nome3{
-    margin-left: 330px;
+    margin-left: 20.625rem;
 }
 #SPEED {
     display: flex;
@@ -94,17 +94,17 @@ h1{
 #mais{
     background-color: var(--black);
     color: var(--white);
-    border: 1px solid var(--white);
-    border-radius: 10px;
-    padding: 6px;
+    border: .0625rem solid var(--white);
+    border-radius: .625rem;
+    padding: .375rem;
 }
 .secundarias{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    column-gap: 100px;
-    row-gap: 20px;
+    column-gap: 6.25rem;
+    row-gap: 1.25rem;
     transition: 0.5s;
 }
 .secundarias div:hover{
@@ -115,11 +115,11 @@ h1{
     width: 20vw;
 }
 .secundarias div{
-    border: 1px solid var(--black);
+    border: .0625rem solid var(--black);
 }
 #equipe{
     display: flex;
-    gap: 0px;
+    gap: 0rem;
 }
 #centro{
     background-image: url(https://girodociclismo.com.br/wp-content/uploads/2023/10/girodociclismo.com.br-jumbo-visma-teve-69-vitorias-em-2023-confira-a-classificacao-por-equipes-jumbo-visma-tour-de-france-juntos.jpeg.webp);
@@ -129,7 +129,7 @@ h1{
     width: 80vw;
 }
 #h1{
-    font: 45px var(--fonte-equipe);
+    font: 2.8125rem var(--fonte-equipe);
     text-align: center;
     color: var(--yellow);
 }
@@ -154,7 +154,7 @@ h1{
     text-align: center;
     font-weight: bold;
     background-color: var(--white);
-    border: 1px solid var(--black);
+    border: .0625rem solid var(--black);
 
 }
 
@@ -178,31 +178,31 @@ h1{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 40px;
-    font-size: 20px;
+    height: 2.5rem;
+    font-size: 1.25rem;
 }
 .rede1{
     background-color: var(--azul2);
     width: 33.333vw;
-    height: 40px;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 .tt img{
-    height: 16px;
+    height: 1rem;
 }
 .ii img{
-    height: 16px;
+    height: 1rem;
 }
 .ff img{
-    height: 18px;
+    height: 1.125rem;
 }
 .rede2{
     background: var(--insta);
     width: 33.333vw;
-    height: 40px;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,7 +210,7 @@ h1{
 .rede3{
         background-color: var(--blue);
         width: 33.333vw;
-        height: 40px;
+        height: 2.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -223,13 +223,13 @@ h4{
     height: 100vh;
 }
 #voltar{
-    bottom: 5px;
-    right: 10px;
+    bottom: .3125rem;
+    right: .625rem;
     position: fixed;
 }
 #voltar img{
     height: 8vh;
-    border-radius: 18px;
+    border-radius: 1.125rem;
 }
 #voltar a{
     transition: 1s;
