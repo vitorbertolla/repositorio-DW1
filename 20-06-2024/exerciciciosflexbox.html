@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .conteiner{
+            display: flex; 
+            flex-wrap: wrap; 
+        }
+        .cima{
+            height: 10vh;
+            width: 100vw;
+            background-color: #FFEC99;
+        }
+        .meio{
+            display: flex;
+        }
+        .esquerda{
+            height: 80vh;
+            width: 10vw;
+            background-color: #A5D8FF;
+        }
+        .direita{
+            height: 80vh;
+            width: 90vw;
+            background-color: #B2F2BB;
+        }
+        .baixo{
+            background-color: #FFC9C9;
+            height: 10vh;
+            width: 100vw;
+        }
+        .conteiner2{
+            display: flex;
+        }
+        .esquerda2{
+            height: 100vh;
+            width: 15vw;
+            background-color: #A5D8FF;
+        }
+        .meio2{
+            background-color: #B2F2BB;
+        }
+        .cima2{
+            height: 10vh;
+            width: 90vw;
+            background-color: #FFEC99;
+        }
+        .conteudo{
+            height: 80vh;
+            width: 90vw;
+            background-color: #B2F2BB;
+        }
+        .baixo2{
+            background-color: #FFC9C9;
+            height: 10vh;
+            width: 90vw;
+        }
+        .fundo{
+            height: 100vh;
+            width: 100vw;
+            background-color: #3B5BDB ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        h1{
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            
+        }
+        .planos{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .caixas{
+            height: 55vh;
+            width: 20vw;
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        h4{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .preco{
+            color:blue;
+            font-size: 35px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        button{
+            background-color: #3B5BDB;
+            padding: 5px;
+            color: white;
+            border-radius: 5px;
+            width: 10vw;
+        }
+        .caixas button:hover{
+            background-color: lightblue;
+            color: #3B5BDB;
+            font-weight: bold;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            color: grey;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="cima">
+            topo
+        </div>
+        <div class="meio">
+            <div class="esquerda">sideborder</div>
+            <div class="direita">conteudo</div>
+        </div>
+        <div class="baixo">
+            rodape
+        </div>
+    </div>
+
+
+    <div class="conteiner2">
+        <div class="esquerda2">
+            sideborder
+        </div>
+        <div class="meio2">
+            <div class="cima2">topo</div>
+            <div class="conteudo">conteudo</div>
+            <div class="baixo2">rodape</div>
+        </div>
+
+        </div>
+    </div>
+    
+    <div class="fundo">
+        <h1>Planos</h1>
+        <br>
+        <br>
+        <div class="planos">
+            <div class="caixas">
+                <h4>Starter</h4>
+                <p class="preco">R$ 50,00</p>
+                <ul>
+                    <li>1 usuários</li>
+                    <li>100 GB de armazenamento</li>
+                    <li>Suporte por email</li>
+                </ul>
+                <button>comprar</button>
+            </div>
+            <div class="caixas">
+                <h4>Personal</h4>
+                <p class="preco">R$ 50,00</p>
+                <ul>
+                    <li>10 usuários</li>
+                    <li>1 TB de armazenamento</li>
+                    <li>Suporte por email</li>
+                </ul>
+                <button>comprar</button>
+            </div>
+            <div class="caixas">
+                <h4>Team</h4>
+                <p class="preco">R$ 50,00</p>
+                <ul>
+                    <li>50 usuários</li>
+                    <li>5 TB de armazenamento</li>
+                    <li>Suporte por email</li>
+                </ul>
+                <button>comprar</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
