@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .conteiner{
+            height: 100vh;
+            width: 100vw;
+            background-color: #F2E9DE;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .lista li{
+            list-style: none;
+            border-bottom: 1px solid black;
+        }
+        .lista{
+            width: 25vw;
+            min-width: 300px;
+            height: 63vh;
+            border: 5px solid #5B9EED;
+        }
+        ul{
+            height: 61vh;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+        li{
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            height: 20.5vh;
+            
+        }
+        .s{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        p{
+            color: grey;
+            height: 3vh;
+        }
+        h1{
+            font-size: 4.5vh;
+        }
+        img{
+            border-radius: 100%;
+            height: 14vh;
+            flex-shrink: 0;
+            align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="conteiner">
+        <div class="lista">
+            <ul>
+                <li>
+                    <img src="https://randomuser.me/api/portraits/men/58.jpg" alt="">
+                    <div class="s">
+                        <h1>Phyllis Gilbert</h1>
+                        <p>741 Prospect Rd</p>
+                    </div class="s">
+                </li>
+                <li>
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="">
+                    <div class="s">
+                        <h1>Gertrude Wells</h1>
+                        <p>9377 Spring Hill Rd</p>
+                    </div class="s">
+                </li>
+                <li>
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="">
+                    <div class="s">
+                        <h1>Claude Castro</h1>
+                        <p>2258 Edwards Rd</p>
+                    </div class="s">
+                </li>
+                <li>
+                    <img src="https://randomuser.me/api/portraits/women/13.jpg" alt="">
+                    <div class="s">
+                        <h1>Riley Herrera</h1>
+                        <p>5770 Samaritan Dr</p>
+                    </div class="s">
+                </li>
+                <li>
+                    <img src="https://randomuser.me/api/portraits/women/93.jpg" alt="">
+                    <div class="s">
+                        <h1>Riley Herrera</h1>
+                        <p>5770 Samaritan Dr</p>
+                    </div class="s">
+                </li>
+                <li>
+                    <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="">
+                    <div class="s">
+                        <h1>Riley Herrera</h1>
+                        <p>5770 Samaritan Dr</p>
+                    </div class="s">
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    
+</body>
+</html>
