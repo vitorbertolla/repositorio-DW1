@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            border: 2px solid rgb(109, 3, 109);
+            border-radius: 4px;
+            background-color: rgb(233, 150, 243);
+            padding: 1px;
+            width: 20vw;
+            outline: none;
+            /*  deixa a borda sem animação quando voce seleciona ela */
+        }
+        input::placeholder{
+            color: black;
+        }
+        label{
+            color: black;
+            font-weight: bold;
+        }
+        /* pega todos os inputs que o type tem valor password */
+        input[type=password]{
+            background-color: aquamarine;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="#" method="">
+    <!--  form para fazer um formulario ou seja receber informações -->
+    <!--  action é o endereço do servidor, o nosso vai ser # que é a propria pagina -->
+    <!-- form  é a forma que vai ser enviado get(dados expostos) post(criptografado) -->
+        <label for="1">Nome</label>
+        <!-- for coloca o id do input para vincular os dois -->
+    <!-- legenda do input, sempre inline -->
+        <input type="text" id="1" placeholder="digite seu nome: ">
+         <!-- input é onde vai ser o lugar que a pessoa vai colocar as informações   -->
+          <!-- type é o tipo do input, outros importantes são o password, email, number, checkbox(opçoes), color(abre caixa de cor), time... -->
+           <!-- placeholder é o conteudo do input -->
+        <label for="2">Senha</label>
+        <input type="password" id="2" placeholder="Digite sua senha:">
+        <label for="3">E-mail</label>
+        <input type="email" id="3" placeholder="Digite seu e-mail:">
+
+    </form>
+            
+        
+</body>
+</html>
