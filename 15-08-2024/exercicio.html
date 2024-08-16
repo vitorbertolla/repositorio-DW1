@@ -29,11 +29,27 @@
         .direita {
             height: 100vh;
             width: 50vw;
-
+            background-image: url(https://cdn.pixabay.com/photo/2022/04/03/22/05/buildings-7109918_1280.jpg);
+            background-position-y: center;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: flex-start;
         }
+
+
+        .direita p{
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.423);
+            color: white;
+            font-size: 6vh;
+            width: 30vw;
+        }
+        
         .direita img{
             height: 100vh;
             width: 50vw;
+
         }
 
         .caixa1, .caixa3{
@@ -51,10 +67,14 @@
         }
         #titulo{
             font-size: 4vh;
+            width: 32vw;
+            font-weight: 500;            
         }
         #titulo2{
+            width: 32vw;
             color: grey;
             font-size: 2.3vh;
+            margin-top: 1vh;
         }
     #button1{
         background-color: #272B1F;
@@ -62,19 +82,25 @@
         height: 6vh;
     }
     input, button{
+        height: 5vh;
         width: 32vw;
-        margin: 2vh;
-    }
-    button{
+        margin: 1.7vh;
         background-color: white;
         border: 1px solid #E3E3E4;
-        height: 3.3vh;
     }
     p{
         text-align: center;
     }
     a{
         color: black;
+        font-weight: bold;
+    }
+    a:hover{
+        color: rgb(17, 17, 202);
+    }
+    button:hover{
+        transform: scale(115%);
+        border: 1px solid black;
     }
 
 
@@ -84,7 +110,7 @@
     <div class="conteiner">
         <div class="esquerda">
             <div class="caixa1">
-                <label id="titulo">Sing in or create an account</label>
+                <label id="titulo">Sign in or create an account</label>
                 <label id="titulo2">Welcome back! Please enter yout details</label>
                     <form action="#">
                         <div class="email">
@@ -101,7 +127,7 @@
                 <div class="icones">
                     <div>
 
-                        <button>           <img src="https://logopng.com.br/logos/google-37.png" alt=""> Continue with Google</button>
+                        <button><img src="https://logopng.com.br/logos/google-37.png" alt=""> Continue with Google</button>
                     </div>
                     <div>
                         
@@ -118,7 +144,8 @@
             </div>
         </div>
         <div class="direita">
-            <img src="https://img.freepik.com/fotos-gratis/paisagem-florestal_71767-127.jpg" alt="">
+            <p>"You must be the change you wish to see in the world"</p>
+            <p id="autor">-Vitor Bertolla, 2024</p>
         </div>
 
     </div>
