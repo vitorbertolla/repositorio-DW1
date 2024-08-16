@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .conteiner{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+ 
+
+        }
+        .esquerda{
+            height: 100vh;
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .direita {
+            height: 100vh;
+            width: 50vw;
+
+        }
+        .direita img{
+            height: 100vh;
+            width: 50vw;
+        }
+
+        .caixa1, .caixa3{
+            display:flex ;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .email{
+            display: flex;
+            flex-direction: column;
+        }
+        .caixa3 img{
+            height: 2vh;
+        }
+        #titulo{
+            font-size: 4vh;
+        }
+        #titulo2{
+            color: grey;
+            font-size: 2.3vh;
+        }
+    #button1{
+        background-color: #272B1F;
+        color: white;
+        height: 6vh;
+    }
+    input, button{
+        width: 32vw;
+        margin: 2vh;
+    }
+    button{
+        background-color: white;
+        border: 1px solid #E3E3E4;
+        height: 3.3vh;
+    }
+    p{
+        text-align: center;
+    }
+    a{
+        color: black;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="esquerda">
+            <div class="caixa1">
+                <label id="titulo">Sing in or create an account</label>
+                <label id="titulo2">Welcome back! Please enter yout details</label>
+                    <form action="#">
+                        <div class="email">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email address">
+                            <button id="button1">continue</button>
+                        </div>
+                    </form>
+            </div>
+            <div class="caixa2">
+                <p>or</p>
+            </div>
+            <div class="caixa3">
+                <div class="icones">
+                    <div>
+
+                        <button>           <img src="https://logopng.com.br/logos/google-37.png" alt=""> Continue with Google</button>
+                    </div>
+                    <div>
+                        
+                        <button><img src="https://logopng.com.br/logos/apple-4.png" alt=""> Continue with Apple</button>
+                    </div>
+                    <div>
+                        
+                        <button><img src="https://logopng.com.br/logos/facebook-13.png" alt=""> Continue with Facebook</button>
+                    </div>
+                </div>
+            </div>
+            <div class="caixa4">
+                <p>By siging in or creating an account, you agree with <br> or <a href="">Term & Conditions</a> and <a href="">Privacy Statemenyt</a></p>
+            </div>
+        </div>
+        <div class="direita">
+            <img src="https://img.freepik.com/fotos-gratis/paisagem-florestal_71767-127.jpg" alt="">
+        </div>
+
+    </div>
+    
+</body>
+</html>
