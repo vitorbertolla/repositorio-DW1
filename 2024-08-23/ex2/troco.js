@@ -1,4 +1,4 @@
-function cedulascalc(){
+function calcular(){
     let valortotal = Number(document.getElementById("valortotal").value)
     let valorpago = Number(document.getElementById("valorpago").value)
     let saida1 = document.getElementById("saida1")
