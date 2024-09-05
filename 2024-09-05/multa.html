@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .conteiner{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .titulo{
+            height: 10vh;
+            
+            
+        }
+        .tabelas{ 
+            display: flex; 
+            justify-content: center;
+        }
+        .direita, .esquerda{
+            width: 30vw;
+            height: 40vh;
+            background-color: #DDDDDD;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        p{
+                text-align:justify;
+                margin: 10px;
+        }
+        span{
+            font-weight: bold;
+        }
+        input{
+            background-color: #FAEBD7;
+            margin-top: 20px;
+        }
+        button{
+            background-color: black;
+            color: white;
+            width: 10vw;
+            border-radius: 10px;
+            margin-top: 25px;
+            height: 5vh;
+        }        
+        #saida{
+            margin-top: 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            padding: 8px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="titulo">
+            <h1>Sistemas de Multas</h1>
+        </div>
+        <div class="tabelas">
+                <div class="esquerda">
+                    <form action="">
+                        <label for="n1">velocidade máxima da via <br></label>
+                        <input type="number" id="n1">
+                        <label for="n2"><br>velocidade do veiculo <br></label>
+                        <input type="number" id="n2">
+                    </form>
+                    <button>Calcular</button>
+                </div>
+                <div class="direita">
+                    <p>Multa por excesso de velocidade:</p>
+                    <p><span>R$ 130,16</span> - Até 20% do limite permitido</p>
+                    <p><span>R$ 195,23</span> - De 20% até 50% acima do limite permitido</p>
+                    <p><span>R$ 880,41</span> - Acima de 50% do limite permitido</p>
+                </div>
+        </div>
+        <div id="saida">
+
+
+        </div>
+
+        <script>
+            let botao = document.querySelector('button')
+            // seleciona pela tag ou qualquer outra coisa
+            botao.addEventListener('click', calcular)
+            // a ação e o que vai acontecer se a acção for realizada
+            
+            function calcular(){
+                let velocidade_via = Number(document.getElementById("n1").value)
+                let velocidade_veic = Number(document.getElementById("n2").value)
+                let saida = document.getElementById('saida')
+                let porc = velocidade_veic/velocidade_via
+                let excesso = porc - 1
+                let multa = excesso*100
+                if(velocidade_veic<=0 || velocidade_via<=0){
+                    saida.innerHTML = `Insira velocidades válidas`
+                    saida.style.background = 'yellow'
+                    // variavel + css muda a estilização conforme as condiçoes
+                }
+                else if(excesso<=0){
+                    saida.innerText = `Você não passou o limite, sem multas.`
+                    saida.style.background = 'green'
+
+                }
+                else if(excesso>0 && excesso<=0.2){
+                    saida.innerHTML = `Você passou o limite em ${multa} %, sua multa é R$130,16.`
+                    saida.style.background = 'red'
+                }
+                else if(excesso>0.2 && excesso<=0.5){
+                    saida.innerHTML = `Você passou o limite em ${multa} %, sua multa é R$195,23.`
+                    saida.style.background = 'red'
+                }
+                else if(excesso>0.5){
+                    saida.innerHTML = `Você passou o limite em ${multa} %, sua multa é R$880,41.`
+                    saida.style.background = 'red'
+                }
+            }
+
+
+        </script>
+        
+    </div>
+</body>
+</html>
