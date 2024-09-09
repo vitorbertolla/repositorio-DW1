@@ -10,6 +10,8 @@ if (condicao1 == true) {
   if (condicao2 == true) {
     if (condicao3 == true) {
         console.log("A")
+    }else{
+      console.log("I")
     }
   } else if (condicao4 == true) {
     console.log("B")
