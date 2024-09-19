@@ -1,11 +1,11 @@
 
 let condicao1 = true
-let condicao2 = false
-let condicao3 = false
+let condicao2 = true
+let condicao3 = true
 let condicao4 = true
 let condicao5 = false
 let condicao6 = true
-let condicao7 = false
+let condicao7 = true
 let condicao8 = true
 
 switch(condicao1){

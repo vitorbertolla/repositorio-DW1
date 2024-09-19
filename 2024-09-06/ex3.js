@@ -1,5 +1,5 @@
 let condicao1 = true
-let condicao2 = false
+let condicao2 = true
 let condicao3 = false
 let condicao4 = true
 let condicao5 = false
