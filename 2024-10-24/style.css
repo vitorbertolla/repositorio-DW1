@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Sofia+Sans:ital,wght@0,1;0,400;0,500;0,600;1,200;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("images/fundo.jpg");
+    background-size: cover;
+    /* cobre toda a area */
+    background-repeat: no-repeat;
+    /* para não repetit a imagem caso a area for maior */
+    background-position: center;  
+    font-family: "Poppins";  
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 60px;
+}
+
+nav li:first-child{
+    margin-right: auto;   
+     /* vai pegar todo espaço disponivel que tem  */
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+nav a:hover{
+    color: #dcdcdc;
+}
+
+#sidebar{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    width: 280px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1px);
+    /* essa propriedade cria um blur na imagem quanto mais px maior o blur */
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    z-index: 999;
+
+}
+
+.icon{
+    fill: #fff;
+    /* esse fill vai pintar o svg */
+}
+
+.logotipo{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.content{    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 90vh;
+    color: #fff;
+    flex-direction: column;
+    text-align: center;    
+}
+
+.content p{    
+    max-width: 400px;
+}
+/* cria  uma regra/coondição parea que as estilizações sejam realizadas, neste caso pode ter no max 600px (celular), ou seja tem que esconder o menu e deixar so o hamburger, para abrir o side bar  */
+@media (max-width: 600px) {
+    .hidemobile{
+        display: none;
+    }
+}
+/* aqui é no minimo 600px (notebook) entao vai esconder o hamburguer pois nao vai precisar de sidebar e deixar o nome em cima aparente*/
+@media (min-width: 600px) {
+    .hidenote{
+        display: none;
+    }
+}
