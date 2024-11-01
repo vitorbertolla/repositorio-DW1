@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .conteiner{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+        .cima{
+            height: 13vh;
+            background-color: #018001;
+        }
+        .cima ul{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            list-style: none;
+        }
+        .cima :first-child{
+            margin-right: auto;
+        }
+        .cima a{
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-size: 19px;
+        }
+        .cima a:hover{
+            color: rgb(158, 152, 152);
+        }
+        #logo{
+            font-weight: bold;
+            font-size: 22px;
+        }
+        #celular{
+            height: 100vh;
+            width: 20vw;
+            background-color: #01800153;
+            position: fixed;
+            top: 0;
+            right: 0;
+            display: none;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+        }
+        .icon{
+            fill: #fff;
+        }
+        .icon:hover{
+            fill: rgb(182, 180, 180);
+        }
+        @media (min-width: 768px){
+            .escondenot{
+                display: none;
+            }
+        }
+        @media (max-width: 768px){
+            .escondemob{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="cima">
+            <ul>
+                <li id="logo"><a href="#">Logo</a></li>
+                <li class="escondemob"><a href="#">Home</a></li>
+                <li class="escondemob"><a href="#">Sobre</a></li>
+                <li class="escondemob"><a href="#">Contato</a></li>
+                <li class="escondemob"><a href="#">Contato</a></li>
+                <li id="abrir" class="escondenot">
+                    <a href=""><svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+                </li>
+            </ul>
+            <ul id="celular">
+                <li id="fechar"><a href="">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a></li>
+                <li><a href="#">Logo</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <div class="baixo">
+            <h1>Navbar responsiva</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse blanditiis temporibus odio aspernatur quod. Dolorum itaque sapiente cupiditate, expedita corporis impedit incidunt dolores, quos soluta atque eaque tempora, provident neque.</p>
+        </div>
+    </div>
+    <script>
+        const abrir = document.querySelector("#abrir") 
+        const fechar = document.querySelector("#fechar")
+
+        abrir.addEventListener("click", event1)
+        fechar.addEventListener("click", event2)
+        function event1(){
+            event.preventDefault()
+            abre()
+        }
+        function event2(){
+            event.preventDefault()
+            fecha()
+        }
+
+        function abre(){
+            const celular = document.querySelector("#celular")
+            celular.style.display = "flex"
+            abrir.style.display = "flex"
+        }
+        function fecha(){
+            const celular = document.querySelector("#celular")
+            celular.style.display = "none"
+        }
+    </script>
+    
+</body>
+</html>
