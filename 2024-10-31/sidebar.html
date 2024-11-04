@@ -26,7 +26,7 @@
             align-items: center;
             list-style: none;
         }
-        .cima :first-child{
+        #logo {
             margin-right: auto;
         }
         .cima a{
@@ -39,6 +39,9 @@
         }
         .cima a:hover{
             color: rgb(158, 152, 152);
+        }
+        .escondex{
+            display: none;
         }
         #logo{
             font-weight: bold;
@@ -53,7 +56,7 @@
             right: 0;
             display: none;
             flex-direction: column;
-            justify-content: start;
+            justify-content: center;
             align-items: center;
         }
         .icon{
@@ -82,15 +85,14 @@
                 <li class="escondemob"><a href="#">Home</a></li>
                 <li class="escondemob"><a href="#">Sobre</a></li>
                 <li class="escondemob"><a href="#">Contato</a></li>
-                <li class="escondemob"><a href="#">Contato</a></li>
                 <li id="abrir" class="escondenot">
                     <a href=""><svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
                 </li>
-            </ul>
-            <ul id="celular">
-                <li id="fechar"><a href="">
+                <li id="fechar" class="escondex"><a href="">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                 </a></li>
+            </ul>
+            <ul id="celular">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Contato</a></li>
@@ -120,11 +122,13 @@
             const celular = document.querySelector("#celular")
             celular.style.display = "flex"
             abrir.style.display = "none"
+            fechar.style.display = "flex"
         }
         function fecha(){
             const celular = document.querySelector("#celular")
             celular.style.display = "none"
             abrir.style.display = "flex"
+            fechar.style.display = "none"
         }
     </script>
     
