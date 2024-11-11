@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Alunos - UTFPR</title>
+  <style>
+    /* Estilos Gerais */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    /* Estilo do Cabeçalho */
+    .header {
+      background-color: #004A9F;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    
+    .header img {
+      max-width: 150px;
+      margin-bottom: 10px;
+    }
+
+    .header h1 {
+      font-size: 1.8em;
+      margin: 0;
+    }
+    
+    /* Container principal */
+    .container {
+      max-width: 700px;
+      width: 100%;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    /* Estilo dos elementos de busca */
+    #searchName {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin: 15px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #004A9F;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #003A78;
+    }
+
+    /* Estilo da Tabela */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #004A9F;
+      color: white;
+    }
+
+    /* Rodapé */
+    footer {
+      margin-top: 20px;
+      color: #666;
+      font-size: 0.9em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho com o logo e título -->
+  <div class="header">
+    <img src="https://acao.utfpr.edu.br/static/image/logo.png" alt="Logo da UTFPR">
+    <h1>Consulta de Alunos - UTFPR</h1>
+  </div>
+
+  <!-- Conteúdo Principal -->
+  <div class="container">
+    <label for="searchName">Digite o nome do aluno:</label>
+    <input type="text" id="searchName" placeholder="Digite o nome do aluno">
+    <button onclick="buscarAluno()">Buscar</button>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Turma</th>
+        </tr>
+      </thead>
+      <tbody id="alunosTable">
+        <!-- Dados dos alunos serão inseridos aqui -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>  </footer>
+
+  <!-- Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+  <script src="./firebase.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
